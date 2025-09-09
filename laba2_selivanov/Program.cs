@@ -237,7 +237,7 @@ namespace Program
             */
 
             //Задание 12
-
+            /*
             Console.Write("Введите 1 число: ");
             int num1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите 2 число: ");
@@ -258,6 +258,169 @@ namespace Program
                 sumchik += num3;
             }
             Console.WriteLine($"Сумма: {sumchik}");
+            */
+
+            //Задание 13
+            
+            Console.WriteLine();
+            Console.WriteLine("----------------------------------Приветствую----------------------------------");
+            Console.WriteLine();
+            Console.WriteLine("Вы — отважный искатель приключений, отправившийся в Темный Лабиринт,\r\nчтобы найти легендарного Dungeon Master’а. Вам предстоит пройти через несколько\r\nкомнат, каждая из которых может иметь свои опасности и сокровища.\r\n");
+            Console.WriteLine("-------------------------------------------------------------------------------");
+            Console.WriteLine();
+            Console.WriteLine("              1. Вы стоите перед первой дверью. Перед вами два пути:\r\n              ------------------------Путь А------------------------\r\n              ------------------------Путь B------------------------ ");
+            Console.WriteLine();
+            Console.Write("Путник, так дайже свой ответ: ");
+            string? Dungeon_Master = Convert.ToString(Console.ReadLine()).ToLower();
+            Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------------------------------");
+
+            switch (Dungeon_Master)
+            {
+                case "a":
+                    Console.WriteLine();
+                    Console.WriteLine("Вы выбрали комнату с огромным драконом! Но...");
+                    Console.WriteLine();
+                    Console.WriteLine("Дракон говорит: \"Кто не дышит, но живет; хоть не нужно — много пьет; и в\r\nжизни, и в смерти тело как лед.\"");
+                    Console.WriteLine();
+                    Console.WriteLine("-------------------------------------------------------------------------------");
+                    Console.WriteLine();
+                    Console.WriteLine("Дайте свой ответ как можно быстрее иначе вас съест ДРАКОН АААААААААААААААААА!!!");
+                    Console.WriteLine();
+                    Console.WriteLine("-------------------------------------------------------------------------------");
+                    Console.WriteLine();
+                    Console.Write("Путник, так дайже свой ответ: ");
+                    string? zagadka = Convert.ToString(Console.ReadLine()).ToLower();
+                    Console.WriteLine();
+                    Console.WriteLine("-------------------------------------------------------------------------------");
+
+                    switch (zagadka)
+                    {
+                        case "рыба":
+                            Console.WriteLine();
+                            Console.WriteLine("  Дракон: \"ВЕРНО! Ты достоин пройти дальше...\"");
+                            Console.WriteLine("==============================================");
+                            Console.WriteLine();
+                            Console.WriteLine("ПОЗДРАВЛЯЮ! Тебя не съел дракон, но сокровища скрываются за другой дверью");
+                            Console.WriteLine();
+                            Console.WriteLine("-------------------------------------------------------------------------------");
+                            Console.WriteLine();
+                            Console.WriteLine("                  2. Вы стоите перед дверями. Перед вами два пути:");
+                            Console.WriteLine("              ========================Дверь 1========================");
+                            Console.WriteLine("              |                                                     |");
+                            Console.WriteLine("              =======================================================");
+                            Console.WriteLine("              ========================Дверь 2========================");
+                            Console.WriteLine("              |                                                     |");
+                            Console.WriteLine("              =======================================================");
+                            Console.WriteLine();
+                            Console.Write("Введите 1 или 2: ");
+                            int num1 = Convert.ToInt32(Console.ReadLine());
+
+                            switch (num1)
+                            {
+                                case 1:
+                                    Console.WriteLine();
+                                    Console.WriteLine("==============================================");
+                                    Console.WriteLine("                   ПОБЕДА! ");
+                                    Console.WriteLine("Вы нашли сокровища Dungeon Master'a!");
+                                    Console.WriteLine();
+                                    Console.WriteLine("           ЛЕГЕНДАРНЫЙ  ");
+                                    Console.WriteLine("           DUNGEON MASTER ");
+                                    Console.WriteLine();
+                                    Console.WriteLine("Вы стали новым хранителем лабиринта!");
+                                    break;
+
+                                case 2:
+                                    Console.WriteLine();
+                                    Console.WriteLine("==============================================");
+                                    Console.WriteLine("         ЛОВУШКА!");
+                                    Console.WriteLine("Из стены вылетают ядовитые шипы!");
+                                    Console.WriteLine();
+                                    Console.WriteLine("          ВАС  ПОРАЗИЛО");
+                                    Console.WriteLine();
+                                    Console.WriteLine("Игра окончена...");
+                                    break;
+
+                                default:
+                                    Console.WriteLine();
+                                    Console.WriteLine("Неверный выбор! Лабиринт не терпит нарушителей...");
+                                    break;
+                            }
+                            break;
+
+                        default:
+                            Console.WriteLine();
+                            Console.WriteLine("  Дракон: \"НЕВЕРНО! Тебе не хватает...\"");
+                            Console.WriteLine("==================================================");
+                            Console.WriteLine();
+                            Console.WriteLine("    ДРАКОН СЪЕЛ ВАС!    ");
+                            Console.WriteLine("    ====================");
+                            Console.WriteLine("    |   КОНЕЦ ИГРЫ     |");
+                            Console.WriteLine("    ====================");
+                            break;
+                    }
+                    break;
+
+                case "b":
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    Console.WriteLine("Вас ждет темная комната с двумя дверями:");
+                    Console.WriteLine();
+                    Console.WriteLine("              ========================Дверь 1========================");
+                    Console.WriteLine("              |                                                     |");
+                    Console.WriteLine("              =======================================================");
+                    Console.WriteLine("              ========================Дверь 2========================");
+                    Console.WriteLine("              |                                                     |");
+                    Console.WriteLine("              =======================================================");
+                    Console.WriteLine();
+                    Console.Write("Введите 1 или 2: ");
+                    int num2 = Convert.ToInt32(Console.ReadLine());
+
+                    switch (num2)
+                    {
+                        case 1:
+                            Console.WriteLine();
+                            Console.WriteLine("==============================================");
+                            Console.WriteLine("                   ПОБЕДА!");
+                            Console.WriteLine("Вы нашли сокровища Dungeon Master'a!");
+                            Console.WriteLine();
+                            Console.WriteLine("           ЛЕГЕНДАРНЫЙ   ");
+                            Console.WriteLine("           DUNGEON MASTER ");
+                            Console.WriteLine();
+                            Console.WriteLine("Вы стали новым хранителем лабиринта!");
+                            break;
+
+                        case 2:
+                            Console.WriteLine();
+                            Console.WriteLine("==============================================");
+                            Console.WriteLine("                 ЛОВУШКА!");
+                            Console.WriteLine("Из стены вылетают ядовитые шипы!");
+                            Console.WriteLine();
+                            Console.WriteLine("           ВАС  ПОРАЗИЛО");
+                            Console.WriteLine();
+                            Console.WriteLine("Игра окончена...");
+                            break;
+
+                        default:
+                            Console.WriteLine();
+                            Console.WriteLine("Неверный выбор! Лабиринт не терпит нарушителей...");
+                            Console.WriteLine("Вы заблудились в вечной тьме.");
+                            break;
+                    }
+                    break;
+
+                default:
+                    Console.WriteLine();
+                    Console.WriteLine("Неверный выбор! Лабиринт не терпит нарушителей...");
+                    Console.WriteLine("Вы заблудились в вечной тьме.");
+                    break;
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("===============================================================================");
+            Console.WriteLine("                          ИГРА ЗАВЕРШЕНА");
+            Console.WriteLine("===============================================================================");
+            Console.ReadLine();
         }
     }
 }
